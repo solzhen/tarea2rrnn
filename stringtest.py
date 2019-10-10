@@ -6,7 +6,6 @@ from condicion.condicion import IgualdadCondicion, IteracionesCondicion, Combina
 from ffuncion.string import IgualdadString
 from gfuncion.alphabet import ordinalgen
 
-
 meta = "Hello World!"
 c1 = IgualdadCondicion(len(meta))
 c2 = IteracionesCondicion(1000)
