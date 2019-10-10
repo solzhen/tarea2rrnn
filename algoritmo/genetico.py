@@ -70,16 +70,13 @@ class AlgoritmoGenetico:
         self.poblacion = np.array([
             self.mutar(self.crossover(self.padres[i-1], self.padres[i])) for i in range(self.n)
         ])
-        self.poblacion[0] = ganador
+        self.poblacion[-1] = ganador
 
     def crossover(self, padre, madre):
-        # print("d:",self.funcion_fitness.aplicar(padre))
-        # print("m:",self.funcion_fitness.aplicar(madre))
-        p = np.random.randint(0,self.n)
+        p = np.random.randint(0, self.n)
         r = np.array([
             padre[i] if i < p else madre[i] for i in range(self.largo_cromosoma)
         ])
-        # print("s:",self.funcion_fitness.aplicar(r))
         return r
 
     def mutar(self, cromosoma):

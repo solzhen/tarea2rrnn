@@ -9,3 +9,6 @@ def ordinal_alphabet_gen():
 
 def integer_ten_gen():
     return np.random.randint(10)
+
+def integer_four_gen():
+    return np.random.randint(4)
