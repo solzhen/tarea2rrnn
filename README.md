@@ -158,7 +158,7 @@ Como se ve, cuando la tasa de mutación es 1, el problema de encontrar el string
 
 Mayor población tiene una relación directa con menor cantidad de generaciones requeridas, ya que es más probable encontrar la combinación correcta de genes. Sin embargo, la tasa de mutación demasiado alta disminuye la efectividad de aumentar la población.
 
-La tasa de mutación alcanza sus mejores resultados cuando es 0.1. Por supuesto, esto podría depender de la cantidad de genes por cromosoma. Para un cromosoma de 16 genes (como el del ejemplo), una tasa de mutación de 0.1 corresponde, en promedio, entre 1 y 2 genes aleatorios por individuo, lo cual evita que se pierda el valor de los padres, pero permite suficiente variabilidad para potencialmente mejorar.
+La tasa de mutación alcanza sus mejores resultados cuando es 0.1 para este caso. Esto podría deberse a la función de fitness usada, pues le da igual importancia a todos los genes. Para un cromosoma de 16 genes (como el del ejemplo), una tasa de mutación de 0.1 corresponde, en promedio, entre 1 y 2 genes aleatorios por individuo, lo cual evita que se pierda el valor de los padres, pero permite suficiente variabilidad para potencialmente mejorar.
 
 
 
