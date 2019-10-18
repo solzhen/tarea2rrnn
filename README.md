@@ -1,7 +1,11 @@
 # tarea2rrnn
 Tarea 2 Algoritmo Genetico
 
-## 1. Secuencia de bits
+# Analisis
+
+## Resultados
+
+### 1. Secuencia de bits
 
 ```javascript
 Generation 1 Winner: [0 0 1 0 1 1 1 0 0 0 0 1 0 1]
@@ -17,7 +21,7 @@ Max Score: 14 ; Average Score: 11.0 ; Min Score: 9
 ![Figure 1](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_1.png)
 
 
-## 2.Encontrar una palabra/frase:
+### 2.Encontrar una palabra/frase:
 
 ```javascript
 Generation 1 Winner: [ 64 101  75 108  65  79  91  70 111  82  94  85]
@@ -58,7 +62,7 @@ Max Score: 12 ; Average Score: 7.0 ; Min Score: 3
 ![Figure 2](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_2.png)
 
 
-## 3.Unbound-Knapsack
+### 3.Unbound-Knapsack
 
 ```javascript
 Generation 1 Winner: [0 1 1 4 2]
@@ -83,7 +87,7 @@ Max Score: 36 ; Average Score: 0.0 ; Min Score: 0
 ![Figure 3](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_3.png)
 
 
-## 4. 0-1-Knapsack
+### 4. 0-1-Knapsack
 
 ```javascript
 Generation 1 Winner: [0 1 1 1 1]
@@ -97,3 +101,34 @@ Max Score: 15 ; Average Score: 14.0 ; Min Score: 0
 
 ![Figure 4](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_4.png)
 
+
+
+
+### Heatmap
+
+String a obtener: "0010101011010111"
+
+Límite generaciones: 200
+
+Generaciones a probar: 1, 10, 20, ..., 100
+
+Tasas de mutación: 0.0, 0.1, 0.2, ..., 1.0
+
+```javascript
+[[200. 200. 200. 200. 200. 200. 200. 200. 200. 200. 200.]
+ [200.  12.  13.  17.  54. 154. 200. 200. 200. 200. 200.]
+ [200.   4.   9.  15.  12.  28.  44. 200. 200.  56. 200.]
+ [200.   6.  10.  16.  16.  34.  36. 200. 200. 200. 167.]
+ [200.   9.   7.   5.   9.   7.  21. 109. 200. 200. 200.]
+ [ 10.   8.   9.  12.   5.   9.  24. 200. 200.  83. 166.]
+ [200.   4.   6.   8.   7.  39. 200. 200. 200. 200. 200.]
+ [  7.   6.   7.  12.  23.  25.  18. 200. 200. 200. 200.]
+ [200.   6.   7.  16.  21.  27.  31.  65.  35. 191. 200.]
+ [  7.   7.   7.  18.   4.   6.  16.  27. 200.  18. 200.]
+ [  6.   7.   7.  11.  17.  14.  67. 117. 200.   3. 200.]]
+ ```
+
+![Figure 5](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_5.png)
+
+
+## Comentarios
