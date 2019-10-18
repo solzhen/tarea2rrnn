@@ -77,6 +77,7 @@ Max Score: 12 ; Average Score: 7.0 ; Min Score: 3
 
 El puntaje alcanza el máximo deseado (12) en la generación 211, deteniendo el algoritmo. 
 
+
 El siguiente buscaba el string "**lkqjwekjasdm AKHV-!@#$345132**" (sin comillas)
 
 
@@ -99,6 +100,8 @@ Max Score: 28 ; Average Score: 22.0 ; Min Score: 16
 ```
 
 ![Figure 2.5](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_2.5.png)
+
+Se alcanzó en la generación 2482.
 
 ### 3.Unbound-Knapsack
 
