@@ -129,6 +129,8 @@ Tasas de mutación: 0.0, 0.1, 0.2, ..., 1.0
  ```
 
 ![Figure 5](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_5.png)
+X axis: tasa de mutación (0.0 a 1.0 de izquierda a derecha)
+Y axis: poblacion (1 a 100 de arriba a abajo)
 
 
 ## Comentarios
