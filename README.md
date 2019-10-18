@@ -1,8 +1,9 @@
 # tarea2rrnn
 Tarea 2 Algoritmo Genetico
 
+## 1. Secuencia de bits
+
 ```javascript
-Secuencia de Bits
 Generation 1 Winner: [0 0 1 0 1 1 1 0 0 0 0 1 0 1]
 Max Score: 11 ; Average Score: 7.0 ; Min Score: 3
 Generation 2 Winner: [0 0 1 0 1 0 1 0 0 1 0 0 0 1]
@@ -13,10 +14,10 @@ Generation 4 Winner: [0 0 1 0 1 0 1 0 1 1 0 1 0 1]
 Max Score: 14 ; Average Score: 11.0 ; Min Score: 9
 ```
 
-[Figure 1.png]
+![Figure 1](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_1.png)
 
 
-Encontrar una palabra/frase:
+## 2.Encontrar una palabra/frase:
 
 ```javascript
 Generation 1 Winner: [ 64 101  75 108  65  79  91  70 111  82  94  85]
@@ -54,10 +55,11 @@ Generation 211 Winner: [ 72 101 108 108 111  32  87 111 114 108 100  33]
 Max Score: 12 ; Average Score: 7.0 ; Min Score: 3
 ```
 
-[Figure_2.png]
+![Figure 2](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_2.png)
 
 
-Unbound-Knapsack
+## 3.Unbound-Knapsack
+
 ```javascript
 Generation 1 Winner: [0 1 1 4 2]
 Max Score: 28 ; Average Score: 0.0 ; Min Score: 0
@@ -78,10 +80,10 @@ Generation 200 Winner: [0 0 3 0 3]
 Max Score: 36 ; Average Score: 0.0 ; Min Score: 0
 ```
 
-[Figure_3.png]
+![Figure 3](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_3.png)
 
 
-0-1-Knapsack
+## 4. 0-1-Knapsack
 
 ```javascript
 Generation 1 Winner: [0 1 1 1 1]
@@ -93,5 +95,5 @@ Generation 200 Winner: [0 1 1 1 1]
 Max Score: 15 ; Average Score: 14.0 ; Min Score: 0
 ```
 
-[Figure_4.png]
+![Figure 4](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_4.png)
 
