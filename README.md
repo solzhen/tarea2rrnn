@@ -3,7 +3,7 @@
 
 Cristóbal Fuentes
 
-# Analisis
+# Análisis
 
 ## Resultados
 
