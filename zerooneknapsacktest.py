@@ -4,11 +4,11 @@ from condicion.condicion import IteracionesCondicion
 from ffuncion.fitnessfunctions import KnapsackValue
 from gfuncion.generators import binary_gen
 
-c2 = IteracionesCondicion(200)
-weights = [1, 2, 3, 4,  5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 15]
-values = [5, 8, 10, 12, 15, 20, 20, 21, 25, 30, 33, 35, 35, 35, 48]
+c2 = IteracionesCondicion(100)
+weights = [12, 2, 1, 1, 4]
+values = [4, 2, 2, 1, 10]
 ff = KnapsackValue(weights, values, 15)
 
-ag = AlgoritmoGenetico(100, ff, binary_gen, 0.1, c2, len(weights), heterogenetic_pop)
+ag = AlgoritmoGenetico(5, ff, binary_gen, 0.1, c2, len(weights), heterogenetic_pop)
 
 ez_plot(ag.run())

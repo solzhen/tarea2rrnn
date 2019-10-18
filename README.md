@@ -152,6 +152,24 @@ Max Score: 15 ; Average Score: 14.0 ; Min Score: 0
 
 ![Figure 4](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_4.png)
 
+Es más interesante ver lo que pasa cuando disminuimos la población a solo **5 individuos**:
+
+```javascript
+Generation 1 Winner: [1 0 1 0 0]
+Max Score: 6 ; Average Score: 5.0 ; Min Score: 0
+...
+Generation 35 Winner: [0 0 1 1 1]
+Max Score: 13 ; Average Score: 13.0 ; Min Score: 13
+Generation 36 Winner: [0 1 1 1 1]
+Max Score: 15 ; Average Score: 13.0 ; Min Score: 3
+...
+Generation 100 Winner: [0 1 1 1 1]
+Max Score: 15 ; Average Score: 15.0 ; Min Score: 13
+```
+
+![Figure 4.5](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_4.5.png)
+
+El algoritmo llega al óptimo en 36 generaciones.
 
 ### Heatmap
 
