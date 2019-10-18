@@ -6,11 +6,11 @@ from condicion.condicion import IgualdadCondicion, IteracionesCondicion, Combina
 from ffuncion.fitnessfunctions import IgualdadString
 from gfuncion.generators import ordinal_alphabet_gen
 
-meta = "Hello World!"
+meta = "lkqjwekjasdm AKHV-!@#$345132"
 c1 = IgualdadCondicion(len(meta))
-c2 = IteracionesCondicion(1000)
+c2 = IteracionesCondicion(10000)
 ci = CombinarCondiciones(c1, c2)
 ff = IgualdadString(meta)
-ag = AlgoritmoGenetico(100, ff, ordinal_alphabet_gen, 0.2, ci, len(meta), heterogenetic_pop)
+ag = AlgoritmoGenetico(100, ff, ordinal_alphabet_gen, 0.1, ci, len(meta), heterogenetic_pop)
 
 ez_plot(ag.run())

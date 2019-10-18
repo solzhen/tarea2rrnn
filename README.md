@@ -7,7 +7,9 @@ Cristóbal Fuentes
 
 ## Resultados
 
-Para todos los siguientes resultados se usó una población de **100 individuos**, y una **tasa de mutación de 0.1**.
+Para todos los siguientes resultados (a menos que se indice contrariamente) se usó una población de **100 individuos**, y una **tasa de mutación de 0.1**.
+
+La selección de padres se hizo por torneo (5 individuos). Se mantuvo el ganador de cada generación intacto para la siguiente.
 
 ### 1. Secuencia de bits
 
@@ -15,7 +17,7 @@ Consideré un Cromosoma de largo = largo del string buscado. Cada gen del cromos
 
 La función de fitness usada simplemente cuenta las diferencias punto a punto entre la palabra buscada y la representada por el cromosoma y le resta esto a un puntaje considerado el óptimo (el largo de la palabra).
 
-Para el resultado seguidamente mostrado se buscaba encontrar el string **001010101101010110101110**
+Para el resultado seguidamente mostrado se buscaba encontrar el string "**001010101101010110101110**"
 
 ```javascript
 Generation 1 Winner: [0 0 1 0 1 0 1 1 1 1 1 1 1 0 1 1 1 0 1 0 1 0 1 1]
@@ -41,6 +43,8 @@ Cromosoma de largo igual al largo de la palabra buscada. Cada gen equivale a la 
 
 La función de fitness usada simplemente cuenta las diferencias punto a punto entre la palabra buscada y la representada por el cromosoma y le resta esto a un puntaje considerado el óptimo (el largo de la palabra).
 
+Para el siguiente resultado se buscaba el string "**Hello World!**" (sin commilas)
+
 ```javascript
 Generation 1 Winner: [ 64 101  75 108  65  79  91  70 111  82  94  85]
 Max Score: 2 ; Average Score: 0.0 ; Min Score: 0
@@ -59,14 +63,6 @@ Max Score: 3 ; Average Score: 2.0 ; Min Score: 0
 Generation 8 Winner: [ 59 101  75 108  33  74  69 111 111  58 100  43]
 Max Score: 4 ; Average Score: 2.0 ; Min Score: 0
 ....
-Generation 204 Winner: [ 72 101 108 108 111  32  44 111 114 108 100  33]
-Max Score: 11 ; Average Score: 7.0 ; Min Score: 4
-Generation 205 Winner: [ 72 101 108 108 111  32  44 111 114 108 100  33]
-Max Score: 11 ; Average Score: 7.0 ; Min Score: 4
-Generation 206 Winner: [ 72 101 108 108 111  32  44 111 114 108 100  33]
-Max Score: 11 ; Average Score: 7.0 ; Min Score: 4
-Generation 207 Winner: [ 72 101 108 108 111  32  44 111 114 108 100  33]
-Max Score: 11 ; Average Score: 7.0 ; Min Score: 4
 Generation 208 Winner: [ 72 101 108 108 111  32  44 111 114 108 100  33]
 Max Score: 11 ; Average Score: 8.0 ; Min Score: 3
 Generation 209 Winner: [ 72 101 108 108 111  32  44 111 114 108 100  33]
@@ -81,6 +77,28 @@ Max Score: 12 ; Average Score: 7.0 ; Min Score: 3
 
 El puntaje alcanza el máximo deseado (12) en la generación 211, deteniendo el algoritmo. 
 
+El siguiente buscaba el string "**lkqjwekjasdm AKHV-!@#$345132**" (sin comillas)
+
+
+```javascript
+Generation 1 Winner: [ 63  56  42 111  95 112  85  36 114 117  79 106  65  48  66 122 100  45
+  49  51 111  65  51  67  38  49  71  54]
+Max Score: 3 ; Average Score: 0.0 ; Min Score: 0
+Generation 2 Winner: [ 81 107  57 114  67 104 107  35  48 100  38 109 104  75  70 117  53 117
+  85  45  45  54  97 118  54  84  69  48]
+Max Score: 3 ; Average Score: 1.0 ; Min Score: 0
+Generation 3 Winner: [ 81 107  57 114  67 104 107  78 101 100  38 109 104  46  70 117  53  56
+  85  45  45  52  40  86  50  75  51  89]
+...
+Generation 2481 Winner: [108 107 113 106 119 101 107 106  97 115 100 109  32  65  75  72  86  45
+  33  64  35  36  51  39  53  49  51  50]
+Max Score: 27 ; Average Score: 22.0 ; Min Score: 17
+Generation 2482 Winner: [108 107 113 106 119 101 107 106  97 115 100 109  32  65  75  72  86  45
+  33  64  35  36  51  52  53  49  51  50]
+Max Score: 28 ; Average Score: 22.0 ; Min Score: 16
+```
+
+![Figure 2.5](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_2.5.png)
 
 ### 3.Unbound-Knapsack
 
@@ -138,7 +156,7 @@ String a obtener: "0010101011010111"
 
 Límite generaciones: 200
 
-Generaciones a probar: 1, 10, 20, ..., 100
+Poblaciones a probar: 1, 10, 20, ..., 100
 
 Tasas de mutación: 0.0, 0.1, 0.2, ..., 1.0
 
@@ -168,5 +186,5 @@ Mayor población tiene una relación directa con menor cantidad de generaciones 
 
 La tasa de mutación alcanza sus mejores resultados cuando es 0.1 para este caso. Esto podría deberse a la función de fitness usada, pues le da igual importancia a todos los genes. Para un cromosoma de 16 genes (como el del ejemplo), una tasa de mutación de 0.1 corresponde, en promedio, entre 1 y 2 genes aleatorios por individuo, lo cual evita que se pierda el valor de los padres, pero permite suficiente variabilidad para potencialmente mejorar.
 
-
+Otra conclusión que obtuve es que eventualmente el crecimiento del fitness de la población disminuye drásticamente y el mejoramiento depende casi por completo de la tasa de mutación. Esto hace preguntarme si sería inteligente incrementar la tasa de mutación después de cierto punto (como que no haya crecimiento de fitness en n generaciones)
 
