@@ -1,5 +1,7 @@
 # tarea2rrnn
-Tarea 2 Algoritmo Genetico
+# Tarea 2 Algoritmo Genetico
+
+Cristóbal Fuentes
 
 # Analisis
 
