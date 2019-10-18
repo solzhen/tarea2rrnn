@@ -9,7 +9,7 @@ Cristóbal Fuentes
 
 Para todos los siguientes resultados (a menos que se indice contrariamente) se usó una población de **100 individuos**, y una **tasa de mutación de 0.1**.
 
-La selección de padres se hizo por torneo (5 individuos). Se mantuvo el ganador de cada generación intacto para la siguiente.
+La selección de padres se hizo por torneo (5 individuos). Se mantuvo el ganador de cada generación intacto para la siguiente (elitismo de 1 individuo).
 
 ### 1. Secuencia de bits
 
