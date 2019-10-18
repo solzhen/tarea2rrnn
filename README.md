@@ -109,6 +109,8 @@ Cada cromosoma tiene largo igual a la cantidad cajas. El gen iésimo de un cromo
 
 La función de fitness calcula la suma total de valores, si y solo si la suma de pesos es menor al límite. En caso contrario la función de fitness retorna 0 (mínimo).
 
+El siguiente resultado está basado en el ejemplo del enunciado de la tarea.
+
 ```javascript
 Generation 1 Winner: [0 1 1 4 2]
 Max Score: 28 ; Average Score: 0.0 ; Min Score: 0
@@ -136,7 +138,7 @@ La función logra el óptimo en la generación 43, y mantiene este puntaje hasta
 
 ### 4. 0-1-Knapsack
 
-Igual que la anterior, pero los genes solo pueden 0 o 1.
+Igual que la anterior, pero los genes solo pueden 0 o 1. Para el enunciado de la tarea encontró el resultado óptimo en la primera generación.
 
 ```javascript
 Generation 1 Winner: [0 1 1 1 1]
@@ -149,8 +151,6 @@ Max Score: 15 ; Average Score: 14.0 ; Min Score: 0
 ```
 
 ![Figure 4](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_4.png)
-
-
 
 
 ### Heatmap
