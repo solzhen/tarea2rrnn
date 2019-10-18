@@ -15,18 +15,24 @@ Consideré un Cromosoma de largo = largo del string buscado. Cada gen del cromos
 
 La función de fitness usada simplemente cuenta las diferencias punto a punto entre la palabra buscada y la representada por el cromosoma y le resta esto a un puntaje considerado el óptimo (el largo de la palabra).
 
+Para el resultado seguidamente mostrado se buscaba encontrar el string **001010101101010110101110**
+
 ```javascript
-Generation 1 Winner: [0 0 1 0 1 1 1 0 0 0 0 1 0 1]
-Max Score: 11 ; Average Score: 7.0 ; Min Score: 3
-Generation 2 Winner: [0 0 1 0 1 0 1 0 0 1 0 0 0 1]
-Max Score: 12 ; Average Score: 9.0 ; Min Score: 6
-Generation 3 Winner: [0 0 1 0 1 0 1 0 1 1 0 0 0 1]
-Max Score: 13 ; Average Score: 10.0 ; Min Score: 7
-Generation 4 Winner: [0 0 1 0 1 0 1 0 1 1 0 1 0 1]
-Max Score: 14 ; Average Score: 11.0 ; Min Score: 9
+Generation 1 Winner: [0 0 1 0 1 0 1 1 1 1 1 1 1 0 1 1 1 0 1 0 1 0 1 1]
+Max Score: 17 ; Average Score: 12.0 ; Min Score: 6
+Generation 2 Winner: [0 0 0 0 1 0 1 1 1 0 0 1 0 1 0 1 1 0 1 0 1 1 1 1]
+Max Score: 20 ; Average Score: 15.0 ; Min Score: 9
+Generation 3 Winner: [0 0 0 0 1 0 1 1 1 0 0 1 0 1 0 1 1 0 1 0 1 1 1 1]
+Max Score: 20 ; Average Score: 16.0 ; Min Score: 12
+...
+Max Score: 23 ; Average Score: 21.0 ; Min Score: 17
+Generation 11 Winner: [0 0 1 0 1 0 1 0 1 1 0 1 1 1 0 1 1 0 1 0 1 1 1 0]
+Max Score: 23 ; Average Score: 21.0 ; Min Score: 18
+Generation 12 Winner: [0 0 1 0 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 1 0]
+Max Score: 24 ; Average Score: 21.0 ; Min Score: 18
 ```
 
-![Figure 1](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_1.png)
+![Figure 1](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_1.5.png)
 
 
 ### 2.Encontrar una palabra/frase:
