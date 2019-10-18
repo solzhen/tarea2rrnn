@@ -7,6 +7,10 @@ Tarea 2 Algoritmo Genetico
 
 ### 1. Secuencia de bits
 
+Consideré un Cromosoma de largo = largo del string buscado. Cada gen del cromosoma es 0 o 1, y describen la palabra de forma literal (cromosoma: 011011 = string "011011").
+
+La función de fitness usada simplemente cuenta las diferencias punto a punto entre la palabra buscada y la representada por el cromosoma y le resta esto a un puntaje considerado el óptimo (el largo de la palabra).
+
 ```javascript
 Generation 1 Winner: [0 0 1 0 1 1 1 0 0 0 0 1 0 1]
 Max Score: 11 ; Average Score: 7.0 ; Min Score: 3
@@ -22,6 +26,10 @@ Max Score: 14 ; Average Score: 11.0 ; Min Score: 9
 
 
 ### 2.Encontrar una palabra/frase:
+
+Cromosoma de largo igual al largo de la palabra buscada. Cada gen equivale a la representación decimal ASCII de un carácter entre los ordinales 32 (" ") y 90 ("Z"). El crómosoma representa literalmente la palabra carácter por carácter.
+
+La función de fitness usada simplemente cuenta las diferencias punto a punto entre la palabra buscada y la representada por el cromosoma y le resta esto a un puntaje considerado el óptimo (el largo de la palabra).
 
 ```javascript
 Generation 1 Winner: [ 64 101  75 108  65  79  91  70 111  82  94  85]
@@ -61,8 +69,14 @@ Max Score: 12 ; Average Score: 7.0 ; Min Score: 3
 
 ![Figure 2](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_2.png)
 
+El puntaje alcanza el máximo deseado (12) en la generación 211, deteniendo el algoritmo. 
+
 
 ### 3.Unbound-Knapsack
+
+Cada cromosoma tiene largo igual a la cantidad cajas. El gen iésimo de un cromosoma indica la cantidad de cajas de tipo iésimo en la mochila (un número entero mayor o igual que cero)
+
+La función de fitness calcula la suma total de valores, si y solo si la suma de pesos es menor al límite. En caso contrario la función de fitness retorna 0 (mínimo).
 
 ```javascript
 Generation 1 Winner: [0 1 1 4 2]
@@ -86,8 +100,12 @@ Max Score: 36 ; Average Score: 0.0 ; Min Score: 0
 
 ![Figure 3](https://github.com/solzhen/tarea2rrnn/blob/master/figs/Figure_3.png)
 
+La función logra el óptimo en la generación 43, y mantiene este puntaje hasta la cantidad máxima de iteraciones permitidas (200). 
+
 
 ### 4. 0-1-Knapsack
+
+Igual que la anterior, pero los genes solo pueden 0 o 1.
 
 ```javascript
 Generation 1 Winner: [0 1 1 1 1]
@@ -134,5 +152,11 @@ X axis: tasa de mutación (0.0 a 1.0 de izquierda a derecha)
 
 Y axis: poblacion (1 a 100 de arriba a abajo)
 
+Como se ve, cuando la tasa de mutación es 1, el problema de encontrar el string no se logra en la cantidad de generaciones impuestas, pues no hay herencia, todos los genes son aleatorios cada generación.
 
-## Comentarios
+Mayor población tiene una relación directa con menor cantidad de generaciones requeridas, ya que es más probable encontrar la combinación correcta de genes. Sin embargo, la tasa de mutación demasiado alta disminuye la efectividad de aumentar la población.
+
+La tasa de mutación alcanza sus mejores resultados cuando es 0.1. Por supuesto, esto podría depender de la cantidad de genes por cromosoma. Para un cromosoma de 16 genes (como el del ejemplo), una tasa de mutación de 0.1 corresponde, en promedio, entre 1 y 2 genes aleatorios por individuo, lo cual evita que se pierda el valor de los padres, pero permite suficiente variabilidad para potencialmente mejorar.
+
+
+
