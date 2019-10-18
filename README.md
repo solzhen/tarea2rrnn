@@ -7,6 +7,8 @@ Cristóbal Fuentes
 
 ## Resultados
 
+Para todos los siguientes resultados se usó una población de **100 individuos**, y una **tasa de mutación de 0.1**.
+
 ### 1. Secuencia de bits
 
 Consideré un Cromosoma de largo = largo del string buscado. Cada gen del cromosoma es 0 o 1, y describen la palabra de forma literal (cromosoma: 011011 = string "011011").
