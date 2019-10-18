@@ -6,7 +6,7 @@ from gfuncion.generators import binary_gen
 
 c2 = IteracionesCondicion(200)
 weights = [12, 2, 1, 1, 4]
-values = [7, 2, 2, 1, 10]
+values = [4, 2, 2, 1, 10]
 ff = KnapsackValue(weights, values, 15)
 
 ag = AlgoritmoGenetico(100, ff, binary_gen, 0.2, c2, 5, heterogenetic_pop)

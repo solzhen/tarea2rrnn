@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def heterogenetic_pop(n, l, gf):
@@ -9,10 +10,8 @@ def heterogenetic_pop(n, l, gf):
     ])
 
 
-def ez_plot(ret):
-    import matplotlib.pyplot as plt
-    f1 = plt.figure(1)
-    ax1 = f1.add_subplot(111);
+def ez_plot(ret):    
+    fig, ax1 = plt.subplots()
     ax1.set_title("Gen Alg")
     ax1.set_xlabel('Generation')
     ax1.set_ylabel('Score')
@@ -20,4 +19,4 @@ def ez_plot(ret):
     ax1.plot(ret[:, 1], c='b', label='Average Score')
     ax1.plot(ret[:, 2], c='g', label='Min Score')
     ax1.legend()
-    f1.show()
+    plt.show()
