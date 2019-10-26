@@ -48,7 +48,7 @@ class AlgoritmoGenetico:
 
     def meta(self):
         max_puntaje = np.amax(self.puntajes)
-        pt_promedio = np.median(self.puntajes)
+        pt_promedio = np.average(self.puntajes)
         min_puntaje = np.amin(self.puntajes)
         return max_puntaje, pt_promedio, min_puntaje
 
